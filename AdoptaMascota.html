@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adopta tu mascota</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="main-header">
+            Adoptame
+            <div class="corner-header">Cute</div>
+        </div>
+    </header>
+
+            <!-- Instrucciones -->
+        <div class="instructions">
+            <p>Debes ingresar los datos y dar al botón "Revisar" de cada tarjeta. Si todo bien te aparecerá un check:3</p>
+        </div>
+
+    <main>
+
+        <!-- Tarjetas -->
+        <div class="card">
+            <div class="circle">1</div>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" placeholder="Ingresa el nombre de tu mascota">
+            <div class="check" id="check-nombre"></div>
+            <button onclick="validarCampo('nombre')">Revisar</button>
+        </div>
+
+        <div class="card">
+            <div class="circle">2</div>
+            <label for="edad">Edad:</label>
+            <input type="text" id="edad" placeholder="Ingresa tu edad">
+            <div class="check" id="check-edad"></div>
+            <button onclick="validarCampo('edad')">Revisar</button>
+        </div>
+
+        <div class="card">
+            <div class="circle">3</div>
+            <label for="email">Email:</label>
+            <input type="text" id="email" placeholder="Ingresa tu email">
+            <div class="check" id="check-email"></div>
+            <button onclick="validarCampo('email')">Revisar</button>
+        </div>
+
+        <!-- Botón adoptar -->
+        <div id="adoptar-container">
+            <button id="adoptar-btn" onclick="adoptarGatito()">Adoptar</button>
+        </div>
+    </main>
+
+    <!-- Mensaje de éxito con gatito -->
+    <div class="success-message" id="success-message">
+        <p>¡Felicidades! Adoptaste un gatito</p>
+        <img id="gatito-img" src="" alt="Gatito">
+        <p class="motivador">¡Sigue adoptando nuevos gatitos para desbloquear más!</p>
+    </div>
+
+    <!-- Audio -->
+    <audio id="adopt-sound" src="aud/sonido.mp3"></audio>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

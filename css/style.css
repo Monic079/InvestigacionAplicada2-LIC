@@ -1,0 +1,163 @@
+
+@import url('https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap');
+
+*{
+      font-family: "ADLaM Display", system-ui;
+}
+/* Fondo general */
+
+body {
+    font-family: 'ADLaM Display', sans-serif;
+    background-color: #682900;
+    background-image: url("https://www.transparenttextures.com/patterns/grid-me.png");
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.main-header {
+    background-color: #F5F5F5;
+    border: 4px solid #3C3232;
+    border-radius: 20px;
+    padding: 20px 40px;
+    position: relative;
+    font-size: 2em;
+}
+
+.corner-header {
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    background-color: #3C3232;
+    color: #FFFFFF;
+    padding: 5px 10px;
+    font-size: 0.5em;
+}
+
+/* Instrucciones */
+.instructions {
+    text-align: center;
+    background-color: #fff3cd;
+    border: 2px solid #ffecb5;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Tarjetas */
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.card {
+    background-color: #FF9C00;
+    border-radius: 15px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    position: relative;
+    color: #FEDA9C;
+    font-size: 25px;
+}
+
+.circle {
+    width: 50px;
+    height: 50px;
+    background-color: #639824;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    font-size: 1.5em;
+    margin: 0 auto 10px;
+}
+
+input[type="text"] {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 25px;
+    border: none;
+    background-color: #D9D9D9;
+    font-size: 15px;
+}
+
+button {
+    padding: 5px 20px;
+    border-radius: 20px;
+    border: none;
+    background-color: #954500;
+    color: #F9D5BB;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #7a3600;
+}
+
+.check {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+    color: #000;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-weight: bold;
+}
+
+/* Botón adoptar */
+#adoptar-container {
+    margin-top: 20px;
+}
+
+#adoptar-btn {
+    display: none;
+    font-size: 1.2em;
+}
+
+/* Mensaje de éxito */
+.success-message {
+    display: none;
+    background-color: #6da9db;
+    background-image: url("https://www.transparenttextures.com/patterns/grid-me.png");
+    border-radius: 15px;
+    text-align: center;
+    padding: 20px;
+    margin: 20px auto;
+    width: 320px;
+}
+
+.success-message p{
+    color: #f8e595;
+    font-size: 18px;
+}
+
+.success-message img {
+    width: 200px;
+    margin-top: 10px;
+}
+
+.motivador {
+    margin-top: 15px;
+    font-style: italic;
+    font-weight: bold;
+}
